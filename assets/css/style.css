@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0;
+}
+
 /*region header*/
 
 /*region nav*/
@@ -35,11 +51,29 @@ nav button.navbar-toggle > i.fa-bars {
 /*region jumbotron*/
 
 .jumbotron {
+    color: #fff;
     background: #0158FF url("../img/bg-sea.svg") no-repeat 20%;
     background-size: cover;
     min-height: 500px;
     padding: 0;
     margin-bottom: 0;
+}
+
+.jumbotron .title {
+    margin-top: 60px;
+}
+
+.jumbotron p {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.jumbotron .card {
+    color: #000;
+    background: #fff;
+    padding: 25px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 
 /*endregion*/
@@ -73,8 +107,6 @@ nav button.navbar-toggle > i.fa-bars {
     /*endregion*/
 
     /*endregion*/
-
-
 }
 
 /*endregion*/
@@ -128,6 +160,14 @@ nav button.navbar-toggle > i.fa-bars {
 
 @media screen and (min-width: 1200px) {
 
+}
+
+/*endregion*/
+
+/*region utilities*/
+
+.blue {
+    color: #004AFF;
 }
 
 /*endregion*/
