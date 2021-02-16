@@ -5,13 +5,29 @@ body {
     font-weight: 500;
 }
 
-h1 {
-    font-size: 2.6rem;
+h1, h3 {
     font-weight: 700;
 }
 
+h1 {
+    font-size: 2.6rem;
+}
+
 h3 {
-    margin: 0;
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 7px 0 7px 5px;
+    border: 1px solid #F2F2F2;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
 }
 
 /*region header*/
@@ -55,12 +71,10 @@ nav button.navbar-toggle > i.fa-bars {
     background: #0158FF url("../img/bg-sea.svg") no-repeat 20%;
     background-size: cover;
     min-height: 500px;
-    padding: 0;
-    margin-bottom: 0;
-}
+    padding: 50px 0;
 
-.jumbotron .title {
     margin-top: 60px;
+    margin-bottom: 0;
 }
 
 .jumbotron p {
@@ -69,20 +83,72 @@ nav button.navbar-toggle > i.fa-bars {
 }
 
 .jumbotron .card {
-    color: #000;
+    color: #031C4E;
     background: #fff;
-    padding: 25px 10px;
+    padding: 30px 15px;
     border-radius: 3px;
     margin-top: 10px;
+}
+
+.jumbotron .card button {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 6px 0 6px 5px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+button[name="sign-up"] {
+    color: #fff;
+    background: #579AFF;
+}
+
+button[name="sign-up-google"] {
+    position: relative;
+    color: #444;
+    background: #fff;
+    box-shadow: 2px 2px 1px #F0EFF0;
+}
+
+button[name="sign-up-google"] > img {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 26px;
+}
+
+.jumbotron .card p {
+    font-size: 1.1rem;
+}
+
+.jumbotron .card p > a {
+    color: #026BFF;
+    text-decoration: underline;
 }
 
 /*endregion*/
 
 /*endregion*/
 
+/*region main*/
+
+
+
+/*endregion*/
+
 /*region small screen*/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 1.5rem;
+    }
+
     .container {
         width: 100%;
     }
@@ -102,6 +168,27 @@ nav button.navbar-toggle > i.fa-bars {
     nav button.navbar-toggle {
         display: block;
         margin-right: 0;
+    }
+
+    /*endregion*/
+
+    /*region jumbotron*/
+
+    .jumbotron h1 {
+        font-size: 3.6rem;
+    }
+
+    .jumbotron p {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .jumbotron .card button {
+        font-size: 1.3rem;
+    }
+
+    .jumbotron .card p {
+        font-size: 1.2rem;
     }
 
     /*endregion*/
@@ -150,6 +237,27 @@ nav button.navbar-toggle > i.fa-bars {
 
     /*endregion*/
 
+    /*region jumbotron*/
+
+    .jumbotron h1 {
+        font-size: 4.7rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .jumbotron .card button {
+        font-size: 1.2rem;
+    }
+
+    .jumbotron .card p {
+        font-size: 1.1rem;
+    }
+
+    /*endregion*/
+
     /*endregion*/
 
 }
@@ -159,7 +267,30 @@ nav button.navbar-toggle > i.fa-bars {
 /*region large screen*/
 
 @media screen and (min-width: 1200px) {
+    /*region header*/
 
+    /*region jumbotron*/
+
+    .jumbotron h1 {
+        font-size: 5.3rem;
+    }
+
+    .jumbotron p {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .jumbotron .card button {
+        font-size: 1.3rem;
+    }
+
+    .jumbotron .card p {
+        font-size: 1.2rem;
+    }
+
+    /*endregion*/
+
+    /*endregion*/
 }
 
 /*endregion*/
@@ -167,7 +298,7 @@ nav button.navbar-toggle > i.fa-bars {
 /*region utilities*/
 
 .blue {
-    color: #004AFF;
+    color: #006AFF;
 }
 
 /*endregion*/
