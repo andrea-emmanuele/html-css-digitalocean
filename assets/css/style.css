@@ -5,7 +5,7 @@ body {
     font-weight: 500;
 }
 
-h1, h3 {
+h1, h3, h5 {
     font-weight: 700;
 }
 
@@ -87,7 +87,6 @@ nav button.navbar-toggle > i.fa-bars {
 }
 
 .jumbotron .card {
-    color: #031C4E;
     background: #fff;
     padding: 30px 15px;
     border-radius: 3px;
@@ -157,6 +156,47 @@ button[name="sign-up-google"] > img {
 #customers a {
     font-size: 1.2rem;
     padding-top: 20px;
+}
+
+/*endregion*/
+
+/*region our process*/
+
+#our-process h1 {
+    font-size: 2.3rem;
+}
+
+#our-process p {
+    font-size: 1.3rem;
+    color: #5C6A88;
+}
+
+#our-process .nav-pills li {
+    margin-top: 0;
+}
+
+#our-process .nav-pills a {
+    color: #75809A;
+    border-left: 2px solid #ccc;
+    border-radius: 0;
+}
+
+#our-process .nav-pills a:hover {
+    background: #F3F5F9;
+}
+
+#our-process .nav-pills a:focus {
+    background: none;
+}
+
+#our-process .nav-pills a.active {
+    color: #031C4E;
+    background: none;
+    border-left: 2px solid #006AFF;
+}
+
+#our-process img {
+    height: 35px;
 }
 
 /*endregion*/
@@ -243,6 +283,22 @@ button[name="sign-up-google"] > img {
 
     /*endregion*/
 
+    /*region our process*/
+
+    #our-process h1 {
+        font-size: 2.6rem;
+    }
+
+    #our-process h5, #our-process .nav-pills a {
+        font-size: 1.6rem;
+    }
+
+    #our-process p {
+        font-size: 1.4rem;
+    }
+
+    /*endregion*/
+
     /*endregion*/
 }
 
@@ -310,6 +366,25 @@ button[name="sign-up-google"] > img {
 
     /*endregion*/
 
+    /*region main*/
+
+    /*region our process*/
+
+    #our-process h1 {
+        font-size: 2.6rem;
+    }
+
+    #our-process h5, #our-process .nav-pills a {
+        font-size: 1.6rem;
+    }
+
+    #our-process p {
+        font-size: 1.6rem;
+    }
+
+    /*endregion*/
+
+    /*endregion*/
 }
 
 /*endregion*/
@@ -341,21 +416,36 @@ button[name="sign-up-google"] > img {
     /*endregion*/
 
     /*endregion*/
+
+    /*region main*/
+
+    /*endregion*/
 }
 
 /*endregion*/
 
 /*region common*/
 
-#customers {
-    background: #F3F5F9;
+#customers, #our-process {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+#customers {
+    background: #F3F5F9;
+}
+
+.jumbotron .card, #our-process {
+    color: #031C4E;
 }
 
 /*endregion*/
 
 /*region utilities*/
+
+.small {
+    font-size: 1.2rem !important;
+}
 
 .blue {
     color: #006AFF;
@@ -365,8 +455,22 @@ button[name="sign-up-google"] > img {
     text-transform: uppercase;
 }
 
+.mt-20 {
+    margin-top: 20px;
+}
+
 .mt-15 {
     margin-top: 15px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .mt-sm-20 {
+        margin-top: 20px;
+    }
 }
 
 /*endregion*/
