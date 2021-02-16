@@ -18,6 +18,10 @@ h3 {
     margin: 0 0 10px 0;
 }
 
+a {
+    color: #026BFF;
+}
+
 input[type="text"], input[type="password"] {
     width: 100%;
     padding: 7px 0 7px 5px;
@@ -124,7 +128,6 @@ button[name="sign-up-google"] > img {
 }
 
 .jumbotron .card p > a {
-    color: #026BFF;
     text-decoration: underline;
 }
 
@@ -134,7 +137,29 @@ button[name="sign-up-google"] > img {
 
 /*region main*/
 
+/*region customers*/
 
+#customers h6 {
+    color: #7A859F;
+}
+
+#customers .logo {
+    margin-top: 35px;
+}
+
+#customers .logo > img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    object-position: left;
+}
+
+#customers a {
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+
+/*endregion*/
 
 /*endregion*/
 
@@ -189,6 +214,31 @@ button[name="sign-up-google"] > img {
 
     .jumbotron .card p {
         font-size: 1.2rem;
+    }
+
+    /*endregion*/
+
+    /*endregion*/
+
+    /*region main*/
+
+    /*region customers*/
+
+    #customers h6 {
+        font-size: 1.5rem;
+    }
+
+    #customers .logo {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    #customers .logo > img {
+        height: 40px;
+    }
+
+    #customers a {
+        font-size: 1.4rem;
     }
 
     /*endregion*/
@@ -295,10 +345,28 @@ button[name="sign-up-google"] > img {
 
 /*endregion*/
 
+/*region common*/
+
+#customers {
+    background: #F3F5F9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*endregion*/
+
 /*region utilities*/
 
 .blue {
     color: #006AFF;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.mt-15 {
+    margin-top: 15px;
 }
 
 /*endregion*/
