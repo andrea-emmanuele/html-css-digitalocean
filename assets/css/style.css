@@ -39,6 +39,13 @@ input[type="text"]:focus, input[type="password"]:focus {
     outline: none;
 }
 
+button {
+    padding: 6px 5px 6px 5px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
 /*region carousel*/
 
 .carousel {
@@ -152,10 +159,6 @@ nav button.navbar-toggle > i.fa-bars {
 .jumbotron .card button {
     font-size: 1.2rem;
     width: 100%;
-    padding: 6px 0 6px 5px;
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 10px;
 }
 
 button[name="sign-up"] {
@@ -280,6 +283,123 @@ button[name="sign-up-google"] > img {
 }
 
 /*endregion*/
+
+/*region register*/
+
+#register button {
+    color: #1375FF;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+/*endregion*/
+
+/*endregion*/
+
+/*region footer*/
+
+#footer {
+    background: #031C4E;
+}
+
+#footer img.logo {
+    width: 36px;
+    margin-bottom: 5px;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+#footer a {
+    color: #838DA3;
+}
+
+#footer .socials a > i {
+    font-size: 1.7rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#footer h5 {
+    color: #fff;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul > li {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+/*endregion*/
+
+/*region help*/
+
+#helper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#helper > .shark {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #006AFF url("../img/shark.svg") no-repeat center center;
+    background-size: contain;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #333);
+}
+
+#helper > .shark:before {
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    content: "3";
+    font-size: 1.3rem;
+    color: #fff;
+    background: #FF0001;
+    padding: 0 5px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+#helper > .message {
+    position: relative;
+    color: #000;
+    background: #fff;
+    width: 250px;
+    height: 50px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    margin-right: 15px;
+    float: right;
+    filter: drop-shadow(0 0 2px #333);
+}
+
+#helper > .message:after {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: rotate(-45deg);
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    display: block;
+}
+
+#helper > .message > p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
 
 /*endregion*/
 
@@ -449,6 +569,14 @@ button[name="sign-up-google"] > img {
     /*endregion*/
 
     /*endregion*/
+
+    /*region footer*/
+
+    #footer img.logo {
+        width: 42px;
+    }
+
+    /*endregion*/
 }
 
 /*endregion*/
@@ -553,7 +681,6 @@ button[name="sign-up-google"] > img {
 
     /*endregion*/
 
-
     /*endregion*/
 }
 
@@ -564,6 +691,15 @@ button[name="sign-up-google"] > img {
 @media screen and (min-width: 1200px) {
 
     /*region carousel*/
+
+    .carousel {
+        width: 60%;
+        margin: 45px auto 5px auto;
+    }
+
+    .carousel-content {
+        width: 88%;
+    }
 
     .carousel img#rockerbox {
         width: 30%;
@@ -627,7 +763,9 @@ button[name="sign-up-google"] > img {
 #main-features,
 #features,
 #regions,
-#teams {
+#teams,
+#register,
+#footer {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -636,7 +774,7 @@ button[name="sign-up-google"] > img {
     background: #F3F5F9;
 }
 
-#regions {
+#regions, #register {
     color: #fff;
     background: linear-gradient(180deg, rgba(0, 71, 197, 1) 4%, rgba(0, 50, 174, 1) 49%, rgba(0, 30, 153, 1) 100%);
 }
@@ -653,8 +791,16 @@ button[name="sign-up-google"] > img {
     color: #006AFF;
 }
 
+.light-gray {
+    color: #838DA3;
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.mt-40 {
+    margin-top: 40px;
 }
 
 .mt-20 {
@@ -665,8 +811,8 @@ button[name="sign-up-google"] > img {
     margin-top: 15px;
 }
 
-.mt-40 {
-    margin-top: 40px;
+.mt-10 {
+    margin-top: 10px;
 }
 
 .mr-5 {
