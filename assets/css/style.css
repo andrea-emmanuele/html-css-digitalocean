@@ -6,7 +6,7 @@ body {
     color: #5C6A88;
 }
 
-h1, h3, h5 {
+h1, h3, h5, h6 {
     font-weight: 700;
 }
 
@@ -46,8 +46,19 @@ input[type="text"]:focus, input[type="password"]:focus {
     margin: 100px auto 50px auto;
 }
 
+.carousel > .carousel-content {
+    background: #fff;
+    padding: 30px 0;
+}
+
 .carousel img {
     width: 100%;
+}
+
+.carousel q {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    display: block;
 }
 
 .carousel i.fa-angle-left,
@@ -55,7 +66,11 @@ input[type="text"]:focus, input[type="password"]:focus {
     display: none;
 }
 
-.carousel p {
+.carousel-content h5 {
+    margin-bottom: 2px;
+}
+
+.carousel-content h5, .carousel-content p {
     color: #031C4E;
 }
 
@@ -241,9 +256,28 @@ button[name="sign-up-google"] > img {
 
 /*endregion*/
 
-/*region main features*/
+/*region regions*/
 
+#regions .row.region {
+    width: 98%;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
 
+#regions .col-xs-12:last-of-type > .row.region:last-of-type {
+    border-bottom: none;
+}
+
+#regions span, #regions a {
+    padding: 8px 0;
+    display: inline-block;
+}
+
+#regions a {
+    color: #fff;
+}
 
 /*endregion*/
 
@@ -252,6 +286,7 @@ button[name="sign-up-google"] > img {
 /*region small screen*/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    /*show mobile menu button*/
     /*region header*/
 
     /*region nav*/
@@ -298,8 +333,17 @@ button[name="sign-up-google"] > img {
         width: 60%;
     }
 
-    .carousel > img {
+    .carousel > .carousel-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .carousel img {
         width: 85%;
+    }
+
+    .carousel img#rockerbox {
+        width: 70%;
     }
 
     .carousel i.fa-angle-left,
@@ -392,6 +436,18 @@ button[name="sign-up-google"] > img {
 
     /*endregion*/
 
+    /*region regions*/
+
+    #regions .row.region {
+        font-size: 1.2rem;
+    }
+
+    #regions span, #regions a {
+        padding: 7px 0;
+    }
+
+    /*endregion*/
+
     /*endregion*/
 }
 
@@ -415,10 +471,9 @@ button[name="sign-up-google"] > img {
         margin: 45px auto 5px auto;
     }
 
-/*    .carousel i.fa-angle-left,
-    .carousel i.fa-angle-right {
-        display: none;
-    }*/
+    .carousel img#rockerbox {
+        width: 40%;
+    }
 
     /*endregion*/
 
@@ -486,6 +541,19 @@ button[name="sign-up-google"] > img {
 
     /*endregion*/
 
+    /*region regions*/
+
+    #regions .row.region {
+        font-size: 1.1rem;
+    }
+
+    #regions span, #regions a {
+        padding: 8px 0;
+    }
+
+    /*endregion*/
+
+
     /*endregion*/
 }
 
@@ -494,6 +562,15 @@ button[name="sign-up-google"] > img {
 /*region large screen*/
 
 @media screen and (min-width: 1200px) {
+
+    /*region carousel*/
+
+    .carousel img#rockerbox {
+        width: 30%;
+    }
+
+    /*endregion*/
+
     /*region header*/
 
     /*region jumbotron*/
@@ -535,22 +612,33 @@ button[name="sign-up-google"] > img {
 
 /*region common*/
 
-#customers, #our-process, #main-features, #features {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#customers, #main-features {
-    background: #F3F5F9;
-}
-
 .jumbotron .card,
 #our-process h1,
 #our-process h5,
 #main-features h1,
 #features h1,
-#features h5 {
+#features h5,
+#teams h1 {
     color: #031C4E;
+}
+
+#customers,
+#our-process,
+#main-features,
+#features,
+#regions,
+#teams {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#customers, #main-features, #teams {
+    background: #F3F5F9;
+}
+
+#regions {
+    color: #fff;
+    background: linear-gradient(180deg, rgba(0, 71, 197, 1) 4%, rgba(0, 50, 174, 1) 49%, rgba(0, 30, 153, 1) 100%);
 }
 
 /*endregion*/
@@ -587,6 +675,12 @@ button[name="sign-up-google"] > img {
 
 @media screen and (min-width: 768px) {
     .mt-sm-20 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mt-xs-sm-20 {
         margin-top: 20px;
     }
 }
