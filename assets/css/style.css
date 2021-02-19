@@ -589,7 +589,7 @@ button[name="sign-up-google"] > img {
     }
 
     .container {
-        width: 75%;
+        max-width: 940px !important;
     }
 
     /*region carousel*/
@@ -677,66 +677,6 @@ button[name="sign-up-google"] > img {
 
     #regions span, #regions a {
         padding: 8px 0;
-    }
-
-    /*endregion*/
-
-    /*endregion*/
-}
-
-/*endregion*/
-
-/*region large screen*/
-
-@media screen and (min-width: 1200px) {
-
-    /*region carousel*/
-
-    .carousel {
-        width: 60%;
-        margin: 45px auto 5px auto;
-    }
-
-    .carousel-content {
-        width: 88%;
-    }
-
-    .carousel img#rockerbox {
-        width: 30%;
-    }
-
-    /*endregion*/
-
-    /*region header*/
-
-    /*region jumbotron*/
-
-    .jumbotron h1 {
-        font-size: 5.3rem;
-    }
-
-    .jumbotron p {
-        font-size: 2rem;
-    }
-
-    .jumbotron .card button {
-        font-size: 1.3rem;
-    }
-
-    .jumbotron .card p {
-        font-size: 1.2rem;
-    }
-
-    /*endregion*/
-
-    /*endregion*/
-
-    /*region main*/
-
-    /*region customers */
-
-    #customers .logo > img {
-        height: 80px;
     }
 
     /*endregion*/
